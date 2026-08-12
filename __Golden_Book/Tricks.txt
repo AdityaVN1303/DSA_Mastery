@@ -1,0 +1,7 @@
+1. 
+To get Last Digit of Any Number ---> 
+- num%10 
+
+2. 
+To Run Loop Over Cyclic Array ---> 
+- i%n ---> If i becomes equal to n , it returns back to 0. 

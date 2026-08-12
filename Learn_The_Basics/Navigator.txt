@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------
+Problems ---> 
+-------------------------------------------------------------------------
+Patterns - 20 Problems 
+
+Math Problems ---> 
+- Count Digits of Num ---> Modulo Trick
+LC-7 = Reverse A Number ---> Modulo Trick + Store Reverse Number Formula + Overflow EdgeCases
+LC-9 = Palindrome Number ---> Splitting the Number in Half & Compare  
+= GCD ---> Euclidian Theorem 
+- Armstrong Number ---> Modulo Trick 
+- Print All Divisors ---> Simple Modulo
+- Prime Number ---> Modulo + Root(N) Optimization 
+
+Recursion Problems ---> 
+- Printing Name N Times ---> Basic Recursion 
+- Print 1 to N ---> Basic 
+- Print N to 1 ---> Basic 
+- Sum of First N Numbers ---> Basic 
+- Factorial of Given Number ---> Basic 
+- Reverse an Array ---> Basic
+LC-125 = Check if String is Palindrome ---> Basic Recursion + Two Pointers  
+LC-509 = Fibonacci Number ---> Recursion Tree Visualization 
+
+Hashing Problems ---> 
+- Counting Frequency of Array Elements --- Maps + Frequency Array + Character Array Implementation
+= Highest Occuring Element in Array --- Twist (Return Smallest if Freq Same) - Use Frequency Array - Ascending Traversal 
+
+Additional Problems ---> 
+- Frequency of Most Frequent Element --- Sliding Window + Sorting Approach
+
+LeetCode ---> 
+LC - 125 , 509 , 7 , 9
+
+-------------------------------------------------------------------------
+Theory
+-------------------------------------------------------------------------
+- Hashing 
+- Recursion 
+- Patterns 
+- STL 
+- Time & Space Complexity
+
+-------------------------------------------------------------------------
