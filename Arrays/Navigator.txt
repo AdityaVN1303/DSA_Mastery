@@ -1,0 +1,27 @@
+
+Easy Problems ---> 
+- Checking array is sorted or not
+- Largest Element in array
+- Second Largest Element in array
+- Left Rotate By One in Sorted array
+- Linear Search
+- Find the Missing Number 
+- Union of Two Sorted Arrays 
+- Intersection of Two Sorted Arrays 
+- Longest Subarray with Given Sum K (Positives / All Integers)
+- Longest Subarray with Sum 0
+LC-26 = Remove Duplicates from Sorted Array 
+LC-414 = Third Maximum Number
+LC-724 = Find Pivot Index
+LC-1752 = Check if Array is Sorted and Rotated
+LC-349 = Intersection of 2 Arrays 
+LC-350 = Intersection of 2 Arrays II
+LC-53 = Maximum Subarray 
+LC-283 = Move Zeros 
+LC-485 = Max Consecutive Ones
+LC-136 = Single Number 
+LC-268 = Missing Number 
+LC-189 = Rotate Array
+
+
+
