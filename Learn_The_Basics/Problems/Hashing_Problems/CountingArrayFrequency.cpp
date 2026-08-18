@@ -1,9 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
-
-// Character Array ---> Use Array Hashing (Stack Array)
-// Number Array ---> If till 10^6 or 10^7 , Use Array Hashing. 
-// If going above 10^7 , Use unordered_map. 
+using namespace std; 
 
 // Number Hashing 
 vector<int> frequency(vector<int>& v){
