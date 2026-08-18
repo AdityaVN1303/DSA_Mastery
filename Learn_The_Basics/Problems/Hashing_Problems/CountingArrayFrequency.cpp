@@ -6,6 +6,7 @@
 
 using namespace std; 
 
+// Problem - 1
 // Number Hashing using Fixed-Size Array
 // TC: O(N)
 // SC: O(max_val) - Auxiliary space depends on the largest element in input
@@ -24,6 +25,7 @@ vector<int> frequency(const vector<int>& v) {
     return freq;
 }
 
+// Problem - 2
 // Character Hashing using Fixed-Size Array (Lowercase English Letters Only)
 // TC: O(N)
 // SC: O(1) - Fixed size array of 26 elements
@@ -40,6 +42,7 @@ vector<int> frequency(const string& s) {
     return freq;
 }
 
+// Problem - 3
 // Character Hashing Using unordered_map
 // TC: O(N) average, O(N^2) worst-case due to hash collisions
 // SC: O(K) where K is the number of unique characters (O(1) upper-bounded by alphabet size)
