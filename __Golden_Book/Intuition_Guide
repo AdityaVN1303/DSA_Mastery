@@ -1,0 +1,3 @@
+Finding Common Among Many / Intersection 
+- Rule: An item can only appear as many times as its smallest count in any group.
+- Why: If one group has 0 of an item, MIN becomes 0 and removes it automatically.
