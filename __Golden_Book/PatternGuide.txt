@@ -1,1 +1,45 @@
+Pattern 1 ---
+Array Hashing 
+- Uses array indices directly to track frequency/presence/positions of values instead of maps.
+- Treats array index as key. 
+
+Steps ---
+- Find Bounds (min , max) or use pre-known domain constraints. 
+- Allocate contiguous block of memory. 
+
+Constraints --- 
+- Used for Small Value Range - (max-min) <= 10^7
+- Used for Known Domain 
+- Used only for O(N) TC , else use map
+- Can also be used with Offset (a constant value added or subtracted from an input value to shift it into valid range)
+
+Most Common Types --- 
+- bool hash for presence/existence
+- freq array hash for storing frequency or last seen index
+
+Offset Trick --- 
+- Construct Hash Array of Length - max to min (maxVal - minVal + 1)
+- Set the offset to the minimum value (min_val or 'a')
+- Subtract the offset from the element to store into hash array. 
+- Get the original value by adding it with min_value. 
+
+Use When ---
+k = (maxElem - minElem + 1) Value Range
+if K < 10^7 , then Only use. 
+
+If Under LeetCode Constraints Written ---> 
+consists of lowercase English letters ---> Obvious Use Case. 
+
+General Problems --- 
+- Highest Occuring Elements in an Array (Positives and if nums[i] is below 10^7
+- LC-242 --- Valid Anagram 
+- LC-387 --- First Unique Character in a String
+- LC-438 --- Find All Anagrams in a String
+- LC-567 --- Permutation in String
+- LC 1832 --- Check if the Sentence is Panagram
+- LC 383 --- Ransom Note
+- LC 1 --- Two Sum (if nums[i] is finite)
+- LC 169 --- Majority Element (if nums[i] is finite)
+- LC 1002 --- Find Common Characters 
+
 
