@@ -1,0 +1,21 @@
+What to Use When in Hashing ---
+- Character Hashing ---> Use Array Hashing 
+- nums[i] < 10^7 ---> Use Array Hashing 
+- nums[i] > 10^7 ---> Use Hashmap 
+
+TLE & MLE Cases for LeetCode ---
+TLE ---> If Operations > 10^8 (1s)
+MLE ---> If Auxiliary Space Exceeds 256 mb -  10^8 Bytes
+
+Rule of Thumb for TC ---
+- N <= 20 ---> O(2^N)
+- N <= 500 ---> O(N^3)
+- N <= 5x10^3 (5000) ---> O(N^2)
+- N <= 10^5 to 10^6 ---> O(NlogN)
+- N <= 10^8 ---> O(N)
+- N >= 10^9 ---> O(logN)
+
+Capacity of Integers ---> 
+- int ---> 4 Bytes -> -+2^31 -> -+10^9
+- long long ---> 8 Bytes -> -+2^63 -> -+10^18
+
