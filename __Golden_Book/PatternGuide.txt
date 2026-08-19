@@ -1,45 +1,30 @@
-Pattern 1 ---
+Pattern 1 --- 
 Array Hashing 
-- Uses array indices directly to track frequency/presence/positions of values instead of maps.
-- Treats array index as key. 
 
-Steps ---
-- Find Bounds (min , max) or use pre-known domain constraints. 
-- Allocate contiguous block of memory. 
+- Use for Limited & Known Range of nums[i]
+- Uses i = key , nums[i] = value
+- Useful for O(1) Lookups , unlike maps which may give O(N) lookup in case of hashing collisions. 
+- Used when Storing Numbers or Characters usually. 
 
-Constraints --- 
-- Used for Small Value Range - (max-min) <= 10^7
-- Used for Known Domain 
-- Used only for O(N) TC , else use map
-- Can also be used with Offset (a constant value added or subtracted from an input value to shift it into valid range)
+Trigger --- 
+- Use when max - min + 1 <= 10^5
+- nums[i] is lowercase English Letter
+- nums[i] is in [x , y] range 
 
-Most Common Types --- 
-- bool hash for presence/existence
-- freq array hash for storing frequency or last seen index
+Things that I can Store in Hash Array - 
+- Frequency
+- Exists / Seen (true/false)
+- Last Index
+- First Index
 
-Offset Trick --- 
-- Construct Hash Array of Length - max to min (maxVal - minVal + 1)
-- Set the offset to the minimum value (min_val or 'a')
-- Subtract the offset from the element to store into hash array. 
-- Get the original value by adding it with min_value. 
+Using with Offset --- 
+- Offset is used to convert values into valid array indices.
+- Used for Storing Negative Numbers or Characters as Array Indices.
+- Rule - First Find Min and Max Range , then Subtract MinNum from the current Num and Store it. 
+- Ex range(-5 , 5) then (nums[i] - min) = (-3 - (-5)) = 2 , hence -3 is stored at idx 2. 
+- Ex range(a , z) , then (nums[i] - min) = ('c' - 'a') = 2 , hence 'c' is stored at idx 2. 
 
-Use When ---
-k = (maxElem - minElem + 1) Value Range
-if K < 10^7 , then Only use. 
+Else Use Map Hashing 
 
-If Under LeetCode Constraints Written ---> 
-consists of lowercase English letters ---> Obvious Use Case. 
-
-General Problems --- 
-- Highest Occuring Elements in an Array (Positives and if nums[i] is below 10^7
-- LC-242 --- Valid Anagram 
-- LC-387 --- First Unique Character in a String
-- LC-438 --- Find All Anagrams in a String
-- LC-567 --- Permutation in String
-- LC 1832 --- Check if the Sentence is Panagram
-- LC 383 --- Ransom Note
-- LC 1 --- Two Sum (if nums[i] is finite)
-- LC 169 --- Majority Element (if nums[i] is finite)
-- LC 1002 --- Find Common Characters 
-
+Pattern 2 --- 
 
