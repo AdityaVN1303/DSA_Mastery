@@ -1,9 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <unordered_map>
-
+#include <bits/stdc++.h>
 using namespace std; 
 
 // Problem - 1
@@ -57,8 +52,24 @@ unordered_map<char, int> frequencyMap(const string& s) {
     return freq;
 }
 
+    // Number Hashing (Negative Numbers Included) 
+    // Offset Logic Is Used.
+    vector<int> findFreq(vector<int>& nums){
+    int minVal = *(min_element(nums.begin() , nums.end()));
+    int maxVal = *(max_element(nums.begin() , nums.end()));
+    vector<int> ans(maxVal - minVal + 1);
+
+    for(int x : nums){
+        ans[x - minVal]++;
+    }
+
+    // For getting back the original element , add minVal to the i. 
+    return ans;
+}
+
 int main() {
     // 1. Number Hashing
+    // Only Positives. 
     vector<int> numbers = {1, 2, 3, 1, 5, 4, 5, 2};
     vector<int> freqNum = frequency(numbers);
     
@@ -74,6 +85,7 @@ int main() {
     
     for (size_t i = 0; i < freqChar.size(); i++) {
         if (freqChar[i] != 0) {
+            // static_cast converts char to int and vice versa here. (ASCII based)
             char ch = static_cast<char>(i + 'a');
             cout << ch << "->" << freqChar[i] << endl;
         }
