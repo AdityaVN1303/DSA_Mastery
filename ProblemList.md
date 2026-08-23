@@ -39,3 +39,18 @@
 [LC 1979 - Greatest Common Divisor in Array](/Problems/Basics/Basic_Math/LC1979_GCD.cpp)
 
 ---
+
+## Sorting
+
+### Basic Sorting
+
+[Bubble Sort](/Problems/Sorting/Basic_Sorting/BubbleSort.cpp)  
+[Selection Sort](/Problems/Sorting/Basic_Sorting/SelectionSort.cpp)  
+[Insertion Sort](/Problems/Sorting/Basic_Sorting/InsertionSort.cpp)
+
+---
+
+### Advanced Sorting
+
+[Merge Sort](/Problems/Sorting/Advanced_Sorting/MergeSort.cpp) - Repeated Temp Vector , Reusable Temp Vector Approach  
+[Quick Sort](/Problems/Sorting/Advanced_Sorting/QuickSort.cpp) - Hoare , Lomuto Approach
