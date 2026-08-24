@@ -10,8 +10,6 @@
 
 ### Number Theory
 
----
-
 > ### Divisor Pair
 
 > ### Digit Extraction
