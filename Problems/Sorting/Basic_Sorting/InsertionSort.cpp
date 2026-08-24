@@ -8,6 +8,8 @@ using namespace std;
 
 // Insertion Sort Over Selection Sort --- Use Selection Sorts when Minimum Swaps Are required , else Go with Insertion Sort
 
+// Find Min/Max  -> Place at Correct Position
+
 void insertionSort(vector<int> &arr)
 {
     int n = arr.size();
