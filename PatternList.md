@@ -19,3 +19,15 @@
 > ### GCD / Euclidean Algorithm
 
 ---
+
+## [Sorting](/Patterns/Sorting.md)
+
+> ### Divide + Merge - Merge Sort
+
+> ### Lomuto Partition
+
+> ### Hoare Partition
+
+> ### Insertion Sort Pattern 
+
+---
