@@ -46,9 +46,11 @@ Sorting ---
 Lomuto and Hoare are Used to Reorganize the Unsorted Array Around a Single Value
 Lomuto & Hoare are Used to Place any element (pivot) in its correct position in unsorted array
 
-Two Pointers ---
+Pattern ---
 Fast & Slow Pointers , Opposite end Pointers , Two Independent Pointers , Dutch National Flag , Sliding Window are all types under two pointers
 
+Pattern  ---
+Array/String Doubling & Modulo Indexing are 2 techniques for handling circular arrays 
 
 
 
