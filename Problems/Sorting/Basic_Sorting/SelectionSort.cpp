@@ -8,6 +8,8 @@ using namespace std;
 
 // Selection Sort Better than Bubble Sort ---> Selection Sort Does 1 Swap Per Pass while Bubble Sort Does Multiple Swaps Per Pass
 
+// Find Min/Max -> Place at correct position
+
 void selectionSort(vector<int> &arr)
 {
     int n = arr.size();
