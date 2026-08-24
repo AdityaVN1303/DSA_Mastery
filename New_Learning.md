@@ -50,7 +50,13 @@ Pattern ---
 Fast & Slow Pointers , Opposite end Pointers , Two Independent Pointers , Dutch National Flag , Sliding Window are all types under two pointers
 
 Pattern  ---
-Array/String Doubling & Modulo Indexing are 2 techniques for handling circular arrays 
+Array/String Doubling & Modulo Indexing & Cyclic Replacements are 3 techniques for handling circular arrays 
+
+Function ---
+New functions learned - unique , distance , rotate , accumulate , reverse , remove , erase
+
+Rotate Array ---
+Do 'k%n' before any rotation problem
 
 
 
