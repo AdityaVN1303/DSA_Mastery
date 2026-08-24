@@ -58,7 +58,14 @@ New functions learned - unique , distance , rotate , accumulate , reverse , remo
 Rotate Array ---
 Do 'k%n' before any rotation problem
 
+Function ---
+set_union , set_intersection , set_difference , set_symmetric_difference
 
+Sorting ---
+Cyclic Sort Learned
+
+Function ---
+Writing Custom accumulate lambda function 
 
 
 ```
