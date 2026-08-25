@@ -67,5 +67,21 @@ Cyclic Sort Learned
 Function ---
 Writing Custom accumulate lambda function 
 
+Patterns ---
+Sliding Window - 2
+Two Pointers - 3
+Dutch National Flag
+Boyer Moore Voting Algorithm
+Counting Sort
+Prefix Sum + Hashmap
+Hashing with Set/Map
+Kadane's Algorithm
+Sorting
+Cyclic Replacements , Array/String Doubling , Modulo Indexing
+Merge (Two Pointer) Approach
+Lomuto , Hoare (Two Pointer) Approach
+Euclidean Pattern
+Divisor Pair Pattern
+XOR Approach
 
 ```
