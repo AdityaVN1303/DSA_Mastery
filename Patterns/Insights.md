@@ -1,6 +1,7 @@
-# Insights 
+# Insights
 
-### Cyclic Sort vs Inplace Negation 
+### Cyclic Sort vs Inplace Negation
+
 ```
 For All Problems Solved with Inplace Negation can Also be solved with Cyclic Sort but Vice versa not Possible
 
@@ -17,10 +18,11 @@ Cyclic Sort Is used For Sorting as well.
 
 ---
 
-### Counting Sort 
+### Counting Sort
+
 ```
 Sort Array without Comparisons/Swaps
-Frequency Array + Retrieval in Sorted Manner 
+Frequency Array + Retrieval in Sorted Manner
 
 Use When --->
 - If Solution requires Sorting
@@ -30,33 +32,40 @@ Use When --->
 
 TC - O(N + K) , SC - O(K)
 ```
-#### Problems 
 
-[LC 268 - Missing Number]() - Range is Small/Known & Range means Sorted ---> Hints Counting Sort          
-[LC 448 - Find All Numbers disappeared in An Array]() - Range is Small/Known & Range means Sorted ---> Hints Counting Sort        
+#### Problems
 
+[LC 268 - Missing Number](/Problems/Arrays/Easy/LC268_Missing_Number.cpp) - Range is Small/Known & Range means Sorted ---> Hints Counting Sort  
+[LC 448 - Find All Numbers disappeared in An Array](/Problems/Arrays/Easy/LC448_Find_All_Numbers_Disappeared_In_An_Array.cpp) - Range is Small/Known & Range means Sorted ---> Hints Counting Sort
 
 ---
 
-### Cyclic Sort 
+### Cyclic Sort
+
 ```
 An In Place Sorting Technique that repeatedly puts each number at its correct index using its value
 Value -> Correct Index -> Swap Until Correct
 Sorts in TC = O(N) , SC = O(1)
 
-- If Numbers go out of range , ignore them 
+- If Numbers go out of range , ignore them
 
 Use When --->
-Given numbers from Range (1 to N) or (0 to N) ---> Use Cyclic Sort 
+Given numbers from Range (1 to N) or (0 to N) ---> Use Cyclic Sort
 ```
-#### Problems 
 
-[LC 268 - Missing Number]() - range from [0 , n]    
-[LC 448 - Find All Numbers disappeared in An Array]() - Range from [1 , n]     
+#### Problems
+
+[LC 268 - Missing Number](/Problems/Arrays/Easy/LC268_Missing_Number.cpp) - range from [0 , n]  
+[LC 448 - Find All Numbers disappeared in An Array](/Problems/Arrays/Easy/LC448_Find_All_Numbers_Disappeared_In_An_Array.cpp) - Range from [1 , n]  
+[LC 645 - Set Mismatch](/Problems/Arrays/Easy/LC645_Set_Mismatch.cpp) -  
+[LC 41 - First Missing Positive](/Problems/Arrays/Hard/LC41_First_Missing_Positive.cpp) -    
+[LC 287 - Find the Fuplicate Number](/Problems/Arrays/Medium/LC287_Find_The_Duplicate_Number.cpp) -       
+[LC 448 - Find All Duplicates in an Array](/Problems/Arrays/Medium/LC448_Find_All_Duplicates_In_An_Array.cpp) -     
 
 ---
 
 ### Inplace Negation
+
 ```
 An In Place Sorting Technique that repeatedly puts each number at its correct index using its value
 Value -> Correct Index -> Swap Until Correct
@@ -68,14 +77,20 @@ Standard Usage: Only applicable directly when all input elements are strictly po
 (Pre-processing): Can only be used on mixed/negative inputs if you first overwrite/sanitize all negative values and zeros with dummy values (n + 1) in a separate linear pass.
 Default Choice: If an input contains negatives and you don't want to Pre-process, use Cyclic Sort instead.
 ```
-#### Problems 
 
-[LC 268 - Missing Number]() - Range from [0 , n]     
-[LC 448 - Find All Numbers disappeared in An Array]() - Range Given - [1  ,n]    
+#### Problems
+
+[LC 268 - Missing Number](/Problems/Arrays/Easy/LC268_Missing_Number.cpp) - Range from [0 , n]  
+[LC 448 - Find All Numbers disappeared in An Array](/Problems/Arrays/Easy/LC448_Find_All_Numbers_Disappeared_In_An_Array.cpp) - Range Given - [1 ,n]  
+[LC 645 - Set Mismatch](/Problems/Arrays/Easy/LC645_Set_Mismatch.cpp) -  
+[LC 41 - First Missing Positive](/Problems/Arrays/Hard/LC41_First_Missing_Positive.cpp) -    
+[LC 287 - Find the Fuplicate Number](/Problems/Arrays/Medium/LC287_Find_The_Duplicate_Number.cpp) -       
+[LC 448 - Find All Duplicates in an Array](/Problems/Arrays/Medium/LC448_Find_All_Duplicates_In_An_Array.cpp) -     
 
 ---
 
-### XOR 
+### XOR
+
 ```
 Property --->
 - X ^ X = 0
@@ -89,38 +104,47 @@ Use When --->
 Pairs Cancel + Odd-One-Out -> Think XOR
 
 ```
-#### Problems 
 
-[LC 268 - Missing Number]() - Complete Range ^ Given Range Leaves Element with No Pair (Missing) (X^X=0)    
+#### Problems
+
+[LC 268 - Missing Number]() - Complete Range ^ Given Range Leaves Element with No Pair (Missing) (X^X=0)
 
 ---
 
 ## Hashing
+
 ```
-If the answer depends on something seen earlier , go for hashing 
+If the answer depends on something seen earlier , go for hashing
 ```
 
 ### Hashset
+
 ```
 Usage Type --->
 - Ordered Set - O(logn)
 - Unordered Set - O(n) , worst - O(n^2)
 
-Variations ---> 
+Variations --->
 - Check Existence
 - Duplicate Detection
 - Unique Elements
-- Consecutive Sequence 
+- Consecutive Sequence
 
 ```
-#### Problems 
 
-[LC 268 - Missing Number]() - Consecutive Sequence Checker   
-[LC 448 - Find All Numbers disappeared in An Array]() - Consecutive Sequence Checker 
+#### Problems
+
+[LC 268 - Missing Number]() - Consecutive Sequence Checker  
+[LC 448 - Find All Numbers disappeared in An Array]() - Consecutive Sequence Checker        
+[LC 645 - Set Mismatch](/Problems/Arrays/Easy/LC645_Set_Mismatch.cpp) -  
+[LC 41 - First Missing Positive](/Problems/Arrays/Hard/LC41_First_Missing_Positive.cpp) -    
+[LC 287 - Find the Fuplicate Number](/Problems/Arrays/Medium/LC287_Find_The_Duplicate_Number.cpp) -       
+[LC 448 - Find All Duplicates in an Array](/Problems/Arrays/Medium/LC448_Find_All_Duplicates_In_An_Array.cpp) -     
 
 ---
 
 ### Hashmap / Array Hash
+
 ```
 Usage Type --->
 - Hash Array (Small Known Range)
@@ -132,24 +156,14 @@ Variations --->
 - Check Presence + Extra Info
 
 ```
-#### Problems   
+
+#### Problems
 
 [LC 268 - Missing Number]() - Frequency Map  
-[LC 448 - Find All Numbers disappeared in An Array]() - Frequency Check 
+[LC 448 - Find All Numbers disappeared in An Array]() - Frequency Check     
+[LC 645 - Set Mismatch](/Problems/Arrays/Easy/LC645_Set_Mismatch.cpp) -  
+[LC 41 - First Missing Positive](/Problems/Arrays/Hard/LC41_First_Missing_Positive.cpp) -    
+[LC 287 - Find the Fuplicate Number](/Problems/Arrays/Medium/LC287_Find_The_Duplicate_Number.cpp) -       
+[LC 448 - Find All Duplicates in an Array](/Problems/Arrays/Medium/LC448_Find_All_Duplicates_In_An_Array.cpp) -     
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
