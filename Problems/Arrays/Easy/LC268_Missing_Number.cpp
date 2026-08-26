@@ -10,6 +10,10 @@
 // TC - O(N)
 // SC - O(1)
 
+// Inplace Negation 
+// TC - O(N)
+// SC - O(1)
+
 // Mathematical Formula (Sum of N Natural Numbers)
 // TC - O(N)
 // SC - O(1)
