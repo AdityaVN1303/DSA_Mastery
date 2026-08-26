@@ -2,6 +2,10 @@
 
 // Approaches
 
+// Counting Sort 
+// TC - O(N)
+// SC - O(1)
+
 // Cyclic Sort 
 // TC - O(N)
 // SC - O(1)
