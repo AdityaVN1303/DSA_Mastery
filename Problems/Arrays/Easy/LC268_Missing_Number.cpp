@@ -1,10 +1,10 @@
-// Find Missing Number in Range
+// LC 268 - Missing Number
 
 // Approaches
 
 // Counting Sort 
 // TC - O(N)
-// SC - O(1)
+// SC - O(N)
 
 // Cyclic Sort 
 // TC - O(N)
