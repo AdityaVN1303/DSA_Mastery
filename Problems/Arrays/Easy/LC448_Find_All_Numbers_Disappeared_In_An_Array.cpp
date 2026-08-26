@@ -17,3 +17,7 @@
 // Cyclic Sort (Optimal)
 // TC- O(N)
 // SC - O(1)
+
+// Inplace Negation 
+// TC - O(N)
+// SC - O(1)
