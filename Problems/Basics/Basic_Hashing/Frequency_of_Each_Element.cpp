@@ -1,25 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Approaches---> 
+// Frequency Hashing 
 
-// Approach 1 - Using Unordered Map
-// TC - O(n) Average Case, O(n^2) Worst Case
-// SC - O(n)
-
-// Approach 2 - Using Sorting
-// TC - O(nlogn)
-// SC - O(1)
-
-// Approach 3 - Using Frequency Array (if range of elements is known)
-// Use Offset if Negative Numbers are present
-// TC - O(n + k)
-// SC - O(k) where k is the range of elements
-
-// Using set and count function
-// TC - O(n^2)
-// SC - O(n)
-
+// Frquency Map Approach 
 void frequencyOfEachElement(vector<int> &arr) {
     unordered_map<int, int> freqMap;
     
@@ -28,6 +12,8 @@ void frequencyOfEachElement(vector<int> &arr) {
     }
 }
 
+
+// Frequency Hashing with Array Hash 
 // Offset Logic 
 // Offset: A value added/subtracted to shift elements into a valid index range (Starting from 0)
 void frequencyOfEachElement2(vector<int> &arr) {
