@@ -3,11 +3,7 @@ using namespace std;
 
 // Find All Divisors
 
-// Approach 1 - Using Complete Iteration
-// TC - O(n)
-// SC - O(1)
-
-// Approach 2 - Using Divisor Pair Method (OPTIMAL)
+// Using Divisor Pair Method (OPTIMAL)
 // TC - O(sqrt(n))
 // SC - O(1)
 vector<int> findDivisors(int n)
@@ -21,6 +17,7 @@ vector<int> findDivisors(int n)
             divisors.push_back(i);
 
             if (i != n / i)
+                // for Perfect Squares , n/i and i are same , handles duplicate divisors insertion
                 divisors.push_back(n / i);
         }
     }

@@ -4,18 +4,14 @@ using namespace std;
 
 // LC7 - Reverse Integer
 
+// Approach 1 - Using String Conversion (Problem Dont Allow It)
 
-// Approach 1 - Using String Conversion
-// TC - O(k)
-// SC - O(k)
-// Issue - Not Allowed by the problem statement
-
-// Approach 2 - Digit Extraction + Number Reversal (OPTIMAL)
-// TC - O(k)
-// SC - O(1)
+// Approach 2 - Digit Manipulation 
 
 // Issue - Overflow/Underflow Check Required for 32 bit signed Integer Range
-// Solution - Overflow/Underflow: Before rev = rev × 10 + digit, check whether rev would exceed INT_MAX or INT_MIN. If yes, return 0.
+// Solution - Overflow/Underflow: Check with INT_MAX/INT_MIN
+// rev*10 + pop > INT_MAX
+// Perform Equation Rearrangement for IF/Else Checking 
 
 int reverse(int x)
 {
@@ -25,6 +21,8 @@ int reverse(int x)
     {
         int pop = x % 10;
         x /= 10;
+
+        // EXACT CHECKING with INT_MAX/INT_MIN
 
         // Overflow check for INT_MAX (2,147,483,647)
         if (rev > INT_MAX / 10 || (rev == INT_MAX / 10 && pop > 7))

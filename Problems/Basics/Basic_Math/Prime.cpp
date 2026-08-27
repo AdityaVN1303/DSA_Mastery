@@ -3,11 +3,7 @@ using namespace std;
 
 // Prime Number
 
-// Approach 1 - Using Complete Iteration
-// TC - O(n)
-// SC - O(1)
-
-// Approach 2 - Using Divisor Pair Method (OPTIMAL)
+// Using Divisor Pair Method (OPTIMAL)
 // TC - O(sqrt(n))
 // SC - O(1)
 

@@ -1,6 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Find the Number With Highest Frequency
+
+// Approaches
+// Sorting , Frequency Hashing (map) , Inplace Modulo Hashing
+
+// Frequency Map - Hashing Approach
+// TC - O(N)
+// SC - O(N)
 int highestOccurringElement(const vector<int> &nums)
 {
     unordered_map<int, int> freqMap;

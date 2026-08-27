@@ -1,11 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Approaches
-
 // Approach 1 - Using Digit Extraction 
-// TC - O(K) 
-// SC - O(1)
 int countDigits(int n)
 {
     if (n == 0)
@@ -22,8 +18,6 @@ int countDigits(int n)
 }
 
 // Approach 2 - Using Logarithmic Function (OPTIMAL)
-// TC - O(1)
-// SC - O(1)
 int optimizedCount(int n)
 {
     if (n == 0)

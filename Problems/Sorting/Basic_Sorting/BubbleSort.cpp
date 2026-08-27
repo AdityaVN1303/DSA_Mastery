@@ -6,7 +6,7 @@ using namespace std;
 // TC - O(n^2) in worst and average case, O(n) in best case(already/nearly sorted) (bool swapped Logic Used)
 // SC - O(1)
 
-// Swap Adjacent Elements Repeatedly
+// Swap Adjacent Elements Repeatedly Per Iteration, Do N-1 Iterations , For Each Iteration , Largest Number Bubbles at the Back
 
 void bubbleSort(vector<int> &arr)
 {

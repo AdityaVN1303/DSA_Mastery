@@ -8,7 +8,7 @@ using namespace std;
 
 // Selection Sort Better than Bubble Sort ---> Selection Sort Does 1 Swap Per Pass while Bubble Sort Does Multiple Swaps Per Pass
 
-// Find Min/Max -> Place at correct position
+// Find Min/Max and Swap Once Per Iteration , Do n-1 Iteration , Smallest Element gets Placed at the Start
 
 void selectionSort(vector<int> &arr)
 {

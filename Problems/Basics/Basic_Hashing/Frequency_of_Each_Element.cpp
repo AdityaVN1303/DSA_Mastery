@@ -66,7 +66,7 @@ void moduloHashingCustom(vector<int>& nums){
     // (r - l + 1) gives number of slots in array
     if((maxVal - minVal + 1) > n) return;
 
-    // Converting to 0 to N-1 range 
+    // Converting to 0 to N-1 range  because if original nums[i] > n , collisions will occur 
     for(int i=0; i<nums.size(); ++i){
         nums[i] -= minVal;
     }

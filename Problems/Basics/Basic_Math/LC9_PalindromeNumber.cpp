@@ -3,14 +3,9 @@ using namespace std;
 
 // LC9 - Palindrome Number
 
-// Approach 1 - Using String Conversion
-// TC - O(k)
-// SC - O(k)
-// Issue - Not Allowed by the problem statement
+// Approach 1 - Using String Conversion (PS Dont Allow)
 
-// Approach 2 - Digit Extraction + Number Reversal (OPTIMAL)
-// TC - O(k)
-// SC - O(1)
+// Approach 2 - Digit Manipulation 
 
 // Issue - Reversing Full Number causes overflow/underflow
 // Solution - Reverse only half digits to avoid overflow/underflow issues. Compare the first half with the reversed second half.

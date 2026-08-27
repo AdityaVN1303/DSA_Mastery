@@ -8,7 +8,7 @@ using namespace std;
 
 // Insertion Sort Over Selection Sort --- Use Selection Sorts when Minimum Swaps Are required , else Go with Insertion Sort
 
-// Maintain Sorted Prefix - Insert current element
+// Maintain Sorted Prefix - Insert current element in the Sorted Prefix , maintaining the Order
 
 void insertionSort(vector<int> &arr)
 {

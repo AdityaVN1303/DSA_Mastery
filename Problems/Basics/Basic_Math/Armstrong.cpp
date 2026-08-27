@@ -2,10 +2,11 @@
 using namespace std;
 
 // Armstrong Number
-// TC - O(K^2) k = no. of digits
-// SC - O(1)
 
-// Using custom function to return a integer , not float value
+
+
+// pow() function of STL returns floating point Values , which can Cause Precision Errors. 
+// Use Custom pow() instead.
 long long power(int base, int exp)
 {
     long long result = 1;
