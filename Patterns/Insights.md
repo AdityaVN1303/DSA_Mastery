@@ -5,7 +5,7 @@
 ```
 For All Problems Solved with Inplace Negation can Also be solved with Cyclic Sort but Vice versa not Possible
 
-Cyclic Sort Sorts Elements and Disrupts the Original Sequence (indexing) of the Array
+Cyclic Sort - Sorts Elements and Disrupts the Original Sequence (indexing) of the Array
 Inplace Negation Changes the signs of the Original Array but Maintains the Original Order (Signs can be recovered again)
 
 Cyclic Sort applicable to array with negative numbers too with use of offset , but Inplace negation is not
@@ -13,7 +13,6 @@ Cyclic Sort applicable to array with negative numbers too with use of offset , b
 Inplace Negation Performs No Swaps , while Cyclic Sort Performs Swapping.
 
 Cyclic Sort Is used For Sorting as well.
-
 ```
 
 ---
@@ -32,12 +31,6 @@ Use When --->
 
 TC - O(N + K) , SC - O(K)
 ```
-
-#### Problems
-
-[LC 268 - Missing Number](/Problems/Arrays/Easy/LC268_Missing_Number.cpp) - Range is Small/Known & Range means Sorted ---> Hints Counting Sort  
-[LC 448 - Find All Numbers disappeared in An Array](/Problems/Arrays/Easy/LC448_Find_All_Numbers_Disappeared_In_An_Array.cpp) - Range is Small/Known & Range means Sorted ---> Hints Counting Sort
-
 ---
 
 ### Cyclic Sort
@@ -52,16 +45,6 @@ Sorts in TC = O(N) , SC = O(1)
 Use When --->
 Given numbers from Range (1 to N) or (0 to N) ---> Use Cyclic Sort
 ```
-
-#### Problems
-
-[LC 268 - Missing Number](/Problems/Arrays/Easy/LC268_Missing_Number.cpp) - range from [0 , n]  
-[LC 448 - Find All Numbers disappeared in An Array](/Problems/Arrays/Easy/LC448_Find_All_Numbers_Disappeared_In_An_Array.cpp) - Range from [1 , n]  
-[LC 645 - Set Mismatch](/Problems/Arrays/Easy/LC645_Set_Mismatch.cpp) -  
-[LC 41 - First Missing Positive](/Problems/Arrays/Hard/LC41_First_Missing_Positive.cpp) -    
-[LC 287 - Find the Fuplicate Number](/Problems/Arrays/Medium/LC287_Find_The_Duplicate_Number.cpp) -       
-[LC 448 - Find All Duplicates in an Array](/Problems/Arrays/Medium/LC448_Find_All_Duplicates_In_An_Array.cpp) -     
-
 ---
 
 ### Inplace Negation
@@ -76,16 +59,7 @@ Use When --->
 Standard Usage: Only applicable directly when all input elements are strictly positive ([1, n]).
 (Pre-processing): Can only be used on mixed/negative inputs if you first overwrite/sanitize all negative values and zeros with dummy values (n + 1) in a separate linear pass.
 Default Choice: If an input contains negatives and you don't want to Pre-process, use Cyclic Sort instead.
-```
-
-#### Problems
-
-[LC 268 - Missing Number](/Problems/Arrays/Easy/LC268_Missing_Number.cpp) - Range from [0 , n]  
-[LC 448 - Find All Numbers disappeared in An Array](/Problems/Arrays/Easy/LC448_Find_All_Numbers_Disappeared_In_An_Array.cpp) - Range Given - [1 ,n]  
-[LC 645 - Set Mismatch](/Problems/Arrays/Easy/LC645_Set_Mismatch.cpp) -  
-[LC 41 - First Missing Positive](/Problems/Arrays/Hard/LC41_First_Missing_Positive.cpp) -    
-[LC 287 - Find the Fuplicate Number](/Problems/Arrays/Medium/LC287_Find_The_Duplicate_Number.cpp) -       
-[LC 448 - Find All Duplicates in an Array](/Problems/Arrays/Medium/LC448_Find_All_Duplicates_In_An_Array.cpp) -     
+```   
 
 ---
 
@@ -104,11 +78,6 @@ Use When --->
 Pairs Cancel + Odd-One-Out -> Think XOR
 
 ```
-
-#### Problems
-
-[LC 268 - Missing Number]() - Complete Range ^ Given Range Leaves Element with No Pair (Missing) (X^X=0)
-
 ---
 
 ## Hashing
@@ -131,16 +100,6 @@ Variations --->
 - Consecutive Sequence
 
 ```
-
-#### Problems
-
-[LC 268 - Missing Number]() - Consecutive Sequence Checker  
-[LC 448 - Find All Numbers disappeared in An Array]() - Consecutive Sequence Checker        
-[LC 645 - Set Mismatch](/Problems/Arrays/Easy/LC645_Set_Mismatch.cpp) -  
-[LC 41 - First Missing Positive](/Problems/Arrays/Hard/LC41_First_Missing_Positive.cpp) -    
-[LC 287 - Find the Fuplicate Number](/Problems/Arrays/Medium/LC287_Find_The_Duplicate_Number.cpp) -       
-[LC 448 - Find All Duplicates in an Array](/Problems/Arrays/Medium/LC448_Find_All_Duplicates_In_An_Array.cpp) -     
-
 ---
 
 ### Hashmap / Array Hash
@@ -157,13 +116,16 @@ Variations --->
 
 ```
 
-#### Problems
-
-[LC 268 - Missing Number]() - Frequency Map  
-[LC 448 - Find All Numbers disappeared in An Array]() - Frequency Check     
-[LC 645 - Set Mismatch](/Problems/Arrays/Easy/LC645_Set_Mismatch.cpp) -  
-[LC 41 - First Missing Positive](/Problems/Arrays/Hard/LC41_First_Missing_Positive.cpp) -    
-[LC 287 - Find the Fuplicate Number](/Problems/Arrays/Medium/LC287_Find_The_Duplicate_Number.cpp) -       
-[LC 448 - Find All Duplicates in an Array](/Problems/Arrays/Medium/LC448_Find_All_Duplicates_In_An_Array.cpp) -     
-
 ---
+
+
+### Math Patterns 
+```
+Multiplicity Difference -
+(Requires Hashset for Storing Unique Elements)
+If Every Number appears K times except One Number which appears M Times (K > M), then :
+x = (k*(Sum of all Unique Elements) - (Sum of All Elements))/(k-m)
+Trigger ---> Find Unique/Outlier Element & Fixed Repetition is given for Each
+
+```  
+--- 
