@@ -1,7 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Frequency Hashing 
+// Find Frequency of Each Element
+
+// Approaches
+// Hashmap - TC - O(N) , SC - O(N)
+// Sorting - TC - O(NlogN) , SC - O(1) (Uses Linear Scan)
+// Array Hash - (TC - O(N + k) SC - O(K) (No Hash Collisions) (Requires Small Range) (Works Like Counting Sort before Reconstruction)
+// In-Place Modulo Hashing (Requires Fix Range) (TC - O(N) SC - O(1)) & Array Modification is allowed
 
 // Frquency Map Approach 
 void frequencyOfEachElement(vector<int> &arr) {
@@ -11,7 +17,6 @@ void frequencyOfEachElement(vector<int> &arr) {
         freqMap[num]++;
     }
 }
-
 
 // Frequency Hashing with Array Hash 
 // Offset Logic 
@@ -28,4 +33,52 @@ void frequencyOfEachElement2(vector<int> &arr) {
     }
 
     // Get the Original Value Back by Adding MinElement 
+}
+
+
+// In Place Modulo Hashing 
+// TC - O(N)
+// SC - O(1)
+// Requires Strict Range (max - min + 1) <= n
+
+// Range - [0 to N-1]
+void moduloHashing(vector<int>& nums){
+    int n = nums.size();
+
+    // Encoding
+    for(int x : nums){
+        int originalValue = x%n;
+        nums[originalValue] += n;
+    }
+
+    // Decoding
+    for(int i = 0; i<nums.size(); ++i){
+        cout<<i<<" : "<<nums[i]/n<<endl;
+    }
+}
+
+// Custom Range - [x , y]
+void moduloHashingCustom(vector<int>& nums){
+    int maxVal = *(max_element(nums.begin() , nums.end()));
+    int minVal = *(min_element(nums.begin() , nums.end()));
+    int n = nums.size();
+
+    // (r - l + 1) gives number of slots in array
+    if((maxVal - minVal + 1) > n) return;
+
+    // Converting to 0 to N-1 range 
+    for(int i=0; i<nums.size(); ++i){
+        nums[i] -= minVal;
+    }
+
+    // Encoding
+    for(int x : nums){
+        int originalValue = (x)%n;
+        nums[originalValue] += n;
+    }
+
+    // Decoding
+    for(int i = 0; i<nums.size(); ++i){
+        cout<<i+minVal<<" : "<<nums[i]/n<<endl;
+    }
 }
