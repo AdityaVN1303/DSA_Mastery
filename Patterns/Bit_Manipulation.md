@@ -17,13 +17,9 @@ Pairs Cancel + Odd-One-Out -> Think XOR
 
 [LC 136 - Single Number](/Problems/Arrays/Easy/LC136_Single_Number.cpp) 
 ```
-Every Element has Its Pair (Twice)
-Only 1 Element appearing Once has No Pair
-X^X (pair) becomes 0 , Single element is left as answer
+XOR Property 
 ```
 [LC 268 - Missing Number](/Problems/Arrays/Easy/LC268_Missing_Number.cpp) 
 ```
-I have a range [0 , n]
-Original Array & Range Array - Both Array Together will make Each Element have pair , except the Missing Number
-X^X (pair) becomes 0 , Single element is left as answer
+XOR Property 
 ```
