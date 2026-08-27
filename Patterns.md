@@ -23,5 +23,6 @@ Factors of Number ---> Divisor Pair
 GCD/LCM ---> Euclidean Algorithm
 Process Digits of Number ---> Digit Manipulation
 Frequency/Occurences ---> Frequency Hashing
+Frequency + O(1) Space + (r-l+1 <= n) ---> Inplace Modulo Hashing
 Need Grouping/Order to Expose Relationships ---> Sorting + Linear Scan
 ```
