@@ -47,6 +47,8 @@
 [Bubble Sort](/Problems/Sorting/Basic_Sorting/BubbleSort.cpp) - Multiple Swaps  
 [Selection Sort](/Problems/Sorting/Basic_Sorting/SelectionSort.cpp) - Find Min/Max then Place in Correct Position  
 [Insertion Sort](/Problems/Sorting/Basic_Sorting/InsertionSort.cpp) - Fit Current Element in Sorted Array
+[Counting Sort](/Problems/Sorting/Basic_Sorting/CountingSort.cpp) - Counting Occurrences of Each Unique Elements   
+[Cyclic Sort](/Problems/Sorting/Basic_Sorting/CyclicSort.cpp) - Places Contiguous Elements (1 to N) or (0 to N) at their correct indices 
 
 ---
 
