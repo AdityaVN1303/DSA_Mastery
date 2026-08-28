@@ -6,7 +6,7 @@ using namespace std;
 // Approach - Divide - Sort - Merge
 // Split Into 2 Halves -> Recursively Sort Both Halves -> Merge the 2 Sorted Halves
 
-// Approach 1 --- Using New Temporart Vector inside Every merge() call.
+// Approach 1 --- Using New Temporary Vector inside Every merge() call.
 
 // TC - O(NlogN)
 // SC - O(N)
