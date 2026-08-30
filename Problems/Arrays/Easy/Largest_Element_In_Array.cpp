@@ -1,10 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 // Largest Element in Array
 
-// max_element() function / max element maintain (optimal)
-// Linear Scan
 // TC - O(N)
 // SC - O(1)
-
-// Sorting & Returning Last Element
-// TC - O(NlogN)
-// SC - O(1)
+int largest(vector<int>& nums)
+{
+    int largest = INT_MIN;
+    for (int x : nums)
+    {
+        largest = max(x, largest);
+    }
+    return largest;
+}

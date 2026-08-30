@@ -1,15 +1,36 @@
-// Longest Subarray with Given Sum K (Positives)
+#include <bits/stdc++.h>
+using namespace std;
 
-// Approaches 
+// First Subarray with Sum Equals K (Positives) - GFG
 
-// Variable Sliding Window 
+// Can Also be Solved with PrefixSum + Hashmap or with Nested Loops
+
+// Variable Sliding Window (Optimal)
 // TC - O(N)
-// SC - O(1)
+// SC - O(N)
+int longestSubarray(vector<int> &nums, int k)
+{
+    int l = 0;
+    int sum = 0;
+    int longest = 0;
+    for (int r = 0; r < nums.size(); ++r)
+    {
+        sum += nums[r];
 
-// Prefix Sum + Hashmap 
-// TC - O(N) , Worst = O(N^2)
-// SC - O(1)
+        while (sum > k)
+        {
+            sum -= nums[l++];
 
-// Nested Looping (Brute Force)
-// TC - O(N^2)
-// SC - O(1)
+            if (sum == k)
+            {
+                longest = max(longest, r - l + 1);
+            }
+        }
+
+        if (sum == k)
+        {
+            longest = max(longest, r - l + 1);
+        }
+    }
+    return longest;
+}

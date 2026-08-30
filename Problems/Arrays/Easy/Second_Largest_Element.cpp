@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 // Second Largest Element in Array
 
 // Approaches
@@ -6,10 +9,28 @@
 // TC - O(N)
 // SC - O(1)
 
-// Two Pass Scan (One for Largest , another for Second Largest)
-// TC - O(2N)
-// SC - O(1)
+// Taking Only Positive Elements (I was Lazy tbh...)
 
-// Sorting & Reverse Scanning
-// TC - O(NlogN)
-// SC - O(1)
+// Can be solved by all approaches we used for finding Third Maximum Number
+
+int getSecondLargest(vector<int> &arr)
+{
+
+    int first = 0;
+    int second = 0;
+
+    for (int x : arr)
+    {
+        if (x > first)
+        {
+            second = first;
+            first = x;
+        }
+        else if (x > second && x != first)
+        {
+            second = x;
+        }
+    }
+
+    return second == 0 ? -1 : second;
+}
