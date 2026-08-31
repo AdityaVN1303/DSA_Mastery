@@ -7,14 +7,29 @@
 // Hack - Going till Square Root
 // TC - O(root(N))
 // SC - O(1)
+bool judgeSquareSum(int c) {
+        int i=0; 
+        int j = sqrt(c);
+        
+        while(i <= j){
+            long long calc = 1LL * i*i + j*j;
+            if(calc == c) return true;
+            else if(calc > c) --j;
+            else ++i;
+        }
+        
+        return false;
+    }
 
 // Math Calculation 
 // a^2 + b^2 = c , b = root(c - a^2) , if (root(c - a^2) == (int) b) return true 
 // Check for a till root(c) only
 // TC - O(root(N))
 // SC - O(1)
-
-// Binary Search 
-// b^2 = c - a^2
-// Iterate a till root(c)
-// For each a , find c - a^2 , and binary search in remaining part for b , such that b^2 = c - a^2
+bool judgeSquareSum(int c) {
+        for(long long a = 0; a*a <= c; ++a){
+            double b = sqrt(c - a*a);
+            if(b == (int)b) return true;
+        }
+        return false;
+    }
