@@ -17,6 +17,8 @@ Doubling - Cyclic Traversal
 Hashing - With Set , Map
 Hashing + Prefix Sum
 
+Sequence Head (unordered set) Pattern 
+
 Sliding Window - 
 Fixed 
 Variable 
