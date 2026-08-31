@@ -17,7 +17,9 @@ Doubling - Cyclic Traversal
 Hashing - With Set , Map
 Hashing + Prefix Sum
 
-Sequence Head (unordered set) Pattern 
+Sequence Head (unordered set) Pattern
+
+Boyer Moore Voting Algorithm
 
 Sliding Window - 
 Fixed 
