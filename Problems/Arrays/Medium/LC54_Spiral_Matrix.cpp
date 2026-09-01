@@ -49,3 +49,38 @@ vector<int> spiralOrder(vector<vector<int>>& matrix) {
 // Direction Vectors + Visited Matrix
 // TC - O(mxn)
 // SC - O(mxn)
+vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        int r = 0;
+        int c = 0;
+        int m = matrix.size();
+        int n = matrix[0].size();
+        vector<int>ans;
+        ans.reserve(m*n);
+
+        vector<vector<bool>> visited(m , vector<bool>(n , false)); 
+
+        int totalElements = m*n;
+
+        // dir - right ---> down ---> left ---> up
+        int dir = 0;
+        vector<int> dRow = {0 , 1 , 0 , -1};
+        vector<int> dCol = {1 , 0 , -1 , 0};
+
+        for(int i=0; i<totalElements; ++i){
+            ans.push_back(matrix[r][c]);
+            visited[r][c] = true;
+
+            int nextRow = r + dRow[dir];
+            int nextCol = c + dCol[dir];
+
+            if(nextRow >= m || nextRow < 0 || nextCol >= n || nextCol < 0 || visited[nextRow][nextCol]){
+                dir = (dir+1)%4;
+                nextRow = r + dRow[dir];
+                nextCol = c + dCol[dir]; 
+            }
+
+            r = nextRow;
+            c = nextCol; 
+        }
+        return ans;
+    }
