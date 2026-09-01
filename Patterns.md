@@ -52,6 +52,9 @@ int val = *max_element(itr1 , itr2) / *min_element(itr1 , itr2)
 rotate() ---> Rotates Array so that middle element becomes first
 rotate(firstItr , middleItr , lastItr)
 
+next_permutation() ---> Finds next lexicographically greater element. (In Place)
+next_permutation(nums.begin() , nums.end());
+
 reverse() ---> Reverses the Range
 reverse(itr1 , itr2)
 
