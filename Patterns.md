@@ -6,6 +6,7 @@ Sorting + Pointers
 
 Opposite End Pointers
 Fast & Slow Pointers
+Independent Pointers 
 Merge using Two Pointers
 
 Cyclic Sort
@@ -20,6 +21,13 @@ Hashing + Prefix Sum
 Sequence Head (unordered set) Pattern
 
 Boyer Moore Voting Algorithm
+
+Dutch National Flag 
+
+Prefix Sum 
+Kadane's Algorithm 
+
+Prefix Sum + Hashmap 
 
 Sliding Window - 
 Fixed 
